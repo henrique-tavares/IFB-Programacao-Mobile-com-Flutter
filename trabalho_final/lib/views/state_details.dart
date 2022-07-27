@@ -70,7 +70,7 @@ class _StateDetailsState extends State<StateDetails> {
                         if (snapshot.hasData) {
                           Future.delayed(const Duration(milliseconds: 100), () {
                             setState(() {
-                              lastUpdate = DateFormat.yMMMMd('pt_BT').format(
+                              lastUpdate = DateFormat.yMMMMd('pt_BR').format(
                                   (snapshot.data as List<CovidCase>).where((covidCase) => covidCase.isLast).first.date);
                             });
                           });
